@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="test/css" href="style.css">
+    <script src="./script.js"></script>
+    <title>Sound Like a Starbs Snob!!</title>
+  </head>
+  <body>
+    <header>
+      <h1> STARBUCKS DRINK GENERATOR </h1>
+    </header>
+    <main>
+      <div>
+        <form name="options" action="">
+          <div>
+            Choose your milk: <select name="milkType" id="milkTypeid">
+              <option value="skim">Skim</option>
+              <option value="one percent">1%</option>
+              <option value="">2%</option>
+              <option value="idk" selected>not sure?</option>
+              <option value="whole milk">Whole</option>
+              <option value="soy">Soy</option>
+              <option value="almond milk">Almond</option>
+              <option value="coconut milk">Coconut</option>
+            </select>
+          </div>
+          <div>
+            Choose size: <select name="size" id="sizeid">
+              <option value="short">8oz</option>
+              <option value="tall">12oz</option>
+              <option value="idk" selected>ummm</option>
+              <option value="grande">16oz</option>
+              <option value="venti">20oz</option>
+            </select>
+          </div>
+          <fieldset>
+            <legend>How extra do you want your drink?</legend>
+            <div class="slidecontainer">
+              <input type="range" min="1" max="100" value="50" class="slider" id="extraness">
+            </div>
+          </fieldset>
+      </div>
+      <div>
+        <input id="generator" type="button" value="Fire it up!" onclick="generate();" />
+      </div>
+    </main>
+  </body>
+</html>
