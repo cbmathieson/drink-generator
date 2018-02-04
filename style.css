@@ -1,0 +1,105 @@
+html, body, main {
+  height: 99.5%;
+  min-height: 1000px;
+  justify-content: center;
+}
+
+header {
+  font-family: 'Bungee Shade', cursive;
+  color: rgb(0,113,69);
+  font-size: 300%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 93%;
+  background-color: rgb(0,113,69);
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  padding-bottom: 5px;
+  flex: 1;
+}
+
+body {
+  font-family: 'Fugaz One', cursive;
+  background-color: white;
+  color: rgb(205,225,205);
+  padding: 0;
+  margin: 0;
+}
+
+.sub-container {
+  font-size: 200%;
+  border-color: white;
+  flex: 1;
+  padding: 10px;
+}
+
+#button {
+  padding-top: 40px;
+}
+
+#form div {
+  padding: 20px;
+}
+
+#answer {
+  padding-bottom: 5%;
+  font-size: 175%;
+  justify-content: center;
+  border-color: white;
+  border-width: thick;
+}
+
+#generator {
+  font-family: 'Fugaz One', cursive;
+  width: 30%;
+  font-size: 17px;
+  border-radius: 20px;
+  background-color: white;
+  color: #8B4513;
+  text-align: center;
+}
+
+select {
+  border-style: none;
+  width: 15%;
+  padding-left: 45%;
+  font-size: 20px;
+  font-family: 'Fugaz One', cursive;
+  color: #8B4513;
+}
+
+.slider {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 40%;
+  border-radius: 15px;
+  outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #8B4513;
+    cursor:pointer;
+}
+
+p {
+  font-size: 100%;
+}
+
+#intro {
+  flex-basis: 15%;
+  justify-content: center;
+  padding-top: 5%
+}

@@ -136,7 +136,7 @@ function generate() {
   };
 
   if(extraness < 9) {
-    var text = drink.getInfo();
+    var text = drink.getInfo() + ".";
     insert(text);
   } else {
     var text = drink.getInfo() + " ...wait no... actually ";
@@ -144,7 +144,7 @@ function generate() {
     drink.flava = " " + flavour[randomInt(11)];
     drink.toppings = genToppings(extraness);
     drink.type = genPossDrinks(extraness);
-    text = text + (drink.getInfo());
+    text = text + (drink.getInfo()) + ".";
     insert(text);
   }
 }

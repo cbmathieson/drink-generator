@@ -2,57 +2,53 @@
 <html>
   <head>
     <link rel="stylesheet" type="test/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Fugaz+One" rel="stylesheet">
     <script src="./script.js"></script>
     <title>Starbucks Drink Generator</title>
   </head>
   <body>
-    <header>
-      <h1> STARBUCKS DRINK GENERATOR </h1>
-    </header>
     <main>
-      <div>
-        <p>
-          Have you ever come into Starbucks, quickly becoming lost as the promotional
-          items of the month covers the entire menu just as your local barista asks what
-          you want? Do you wish that you knew what would want? Well... this doesn't really
-          do that, unfortunately.. BUT you CAN impress your fellow customers
-          with this wonderful dictionary of combinations and slang all just a few taps away!
-        </p>
-      </div>
-      <div>
-        <form name="options" action="">
-          <div>
-            Choose your milk: <select name="milkType" id="milkTypeid">
-              <option value=" skim">Skim</option>
-              <option value=" one percent">1%</option>
-              <option value="" selected>2%</option>
-              <option value=" whole milk">Whole</option>
-              <option value=" soy">Soy</option>
-              <option value=" almond milk">Almond</option>
-              <option value=" coconut milk">Coconut</option>
-            </select>
-          </div>
-          <div>
-            Choose size: <select name="size" id="sizeid">
-              <option value="short">8oz</option>
-              <option value="tall" selected>12oz</option>
-              <option value="grande">16oz</option>
-              <option value="venti">20oz</option>
-            </select>
-          </div>
-          <fieldset>
-            <legend>How extra do you want your drink?</legend>
-            <div class="slidecontainer">
-              <input type="range" min="1" max="100" value="20" class="slider" id="extraness">
+      <header>STARBUCKS DRINK GENERATOR</header>
+      <div class="main-container">
+        <div class="sub-container" id="intro">
+          <p>
+            Ever reach the counter at starbucks and not know what to order or how to say it? We may have your answer.
+          </p>
+        </div>
+        <div class="sub-container" id="form">
+          <form name="options" action="">
+            <div>
+              Choose your milk:  <select name="milkType" id="milkTypeid">
+                <option value=" skim">Skim</option>
+                <option value=" one percent">1%</option>
+                <option value="" selected>2%</option>
+                <option value=" whole milk">Whole</option>
+                <option value=" soy">Soy</option>
+                <option value=" almond milk">Almond</option>
+                <option value=" coconut milk">Coconut</option>
+              </select>
             </div>
-          </fieldset>
-      </div>
-      <div>
-        <input id="generator" type="button" value="Fire it up!" onclick="generate();" />
-      </div>
-      <div>
-        <div id="final-drink">
-          Your new drink here!
+            <div>
+              Choose size:  <select name="size" id="sizeid">
+                <option value="short">8oz</option>
+                <option value="tall" selected>12oz</option>
+                <option value="grande">16oz</option>
+                <option value="venti">20oz</option>
+              </select>
+            </div>
+            <div>
+              How extra do you want your order to be?<br />
+              <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="20" class="slider" id="extraness">
+              </div>
+            </div>
+        </div>
+        <div class="sub-container" id="button">
+          <!--<input id="generator" type="button" value="Fire it up!" onclick="generate();" />-->
+          <button type="button" id="generator", onclick="generate()">Fire it up!</button>
+        </div>
+        <div id="answer" class="sub-container">
+          <div id="final-drink"></div>
         </div>
       </div>
     </main>
