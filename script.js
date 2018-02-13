@@ -78,7 +78,7 @@ function genPossDrinks(extraVal){
   if(extraVal < 3) {
     max = 3;
     possDrinks = [
-      'Americano', 'Pike Place Roast', 'Steamed Milk',
+      'Americano', 'Medium Roast', 'Steamed Milk',
     ];
   } else {
     max = 10;
