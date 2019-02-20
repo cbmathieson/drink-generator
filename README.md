@@ -8,3 +8,7 @@ Takes a couple of parameters (milk,size,extraness) and generates a unique way to
 - Formatting a simple HTML document
 - Creating responses with javascript
 - Rudimentary implementation of css styling
+
+## In action:
+
+![](demo.gif)
